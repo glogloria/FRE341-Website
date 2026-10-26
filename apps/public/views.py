@@ -5,7 +5,7 @@ def landing_page(request):
     """
     View for the home/landing page.
     """
-    return render(request, 'home.html', {
+    return render(request, 'index.html', {
         'current_page': 'home'
     })
 
