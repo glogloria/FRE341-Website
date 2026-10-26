@@ -6,8 +6,29 @@
 {% block content %}
 
 <div class="p-2">
+    <div class="filters d-flex justify-content-center gap-3 my-4"">
+        <button 
+            type="button" 
+            class="filter-btn btn btn-outline-dark active" 
+            data-target="books"
+            aria-pressed="true"
+        >
+            Books
+        </button>
 
-    <section class="container py-5">
+        <button 
+            type="button"
+            class="btn btn-outline-dark filter-btn"
+            data-target="blindbox"
+            aria-pressed="false"
+        >
+            Blind Boxes
+        </button>
+    </div>
+
+
+    <!-- Books -->
+    <section id="books" class="container py-5">
         <div class="text-center mb-5">
             <p class="text-uppercase small fw-bold text-secondary mb-2">Découvriez votre aventure prochain</p>
             <h2 class="display-5 fw-bold">Les produits</h2>
@@ -67,6 +88,71 @@
         </div>
     </section>
 
+    <!-- Blind Boxes-->
+     <section id="blindbox" class="container py-5" hidden>
+        <div class="text-center mb-5">
+            <p class="text-uppercase small fw-bold text-secondary mb-2">Découvriez votre aventure prochain</p>
+            <h2 class="display-5 fw-bold">Les produits</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">
+                Une monde nouvelle dans votre attente.
+            </p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 g-4 g-lg-5">
+            <div class="col">
+                <div class="book-item h-100">
+                    <img src="{% static 'public/img/blindbox/bb-1.png' %}"
+                        class="book-cover"
+                        alt="Freshwater cover">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="book-item h-100">
+                    <img src="{% static 'public/img/blindbox/bb-2.png' %}"
+                        class="book-cover"
+                        alt="L'entranger cover">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="book-item h-100">
+                    <img src="{% static 'public/img/blindbox/bb-3.png' %}"
+                        class="book-cover"
+                        alt="Les miserables cover">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="book-item h-100">
+                    <img src="{% static 'public/img/blindbox/bb-4.png' %}"
+                        class="book-cover"
+                        alt="Monte-cristo cover">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="book-item h-100">
+                    <img src="{% static 'public/img/blindbox/bb-5.png' %}"
+                        class="book-cover"
+                        alt="Book cover">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="book-item h-100">
+                    <img src="{% static 'public/img/blindbox/bb-6.png' %}"
+                        class="book-cover"
+                        alt="Le petit prince cover">
+                </div>
+            </div>
+        </div>
+    </section>
+ 
 </div>
 
+{% endblock %}
+
+{% block custom_js %}
+<script defer src="{% static 'public/js/public.js' %}"></script>
 {% endblock %}

@@ -1,4 +1,3 @@
-
 .active {
     font-weight: bold;
     color: #C95C3D!important;
@@ -142,11 +141,6 @@ body {
     overflow: hidden;
 
     background-image: url('img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    color: #fff;
 }
 
 /* Darken the image so the text remains readable */
@@ -264,7 +258,7 @@ body {
 *  public style.css
    ===================== */
 
-   .background {
+.background {
     background-image: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
