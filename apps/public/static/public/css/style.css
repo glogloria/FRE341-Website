@@ -1,0 +1,35 @@
+.background {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    width: 100%;
+}
+
+.display-text {
+    color: #FFFFFF;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    font-family: 'Oswald - Bold.woff2' !important;
+}
+
+
+/* =========================
+*   BOOKS
+   ========================= */
+
+   .book {
+    width: 400px;
+    height: 600px;
+   }
+
+/* =========================
+*   QUOTE
+   ========================= */
+
+.quote-block {
+    background-color: #C95C3D;
+    min-height: 300px;
+    padding: 10px;
+}

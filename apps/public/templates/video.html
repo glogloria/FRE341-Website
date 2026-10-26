@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Vidéo{% endblock %}
+
+{% block content %}
+
+<div class="d-flex align-items-center justify-content-center">
+
+    <video clas="vh-100 w-100" controls>
+        <source src="{% static 'public/img/FRE_video.mp4' %}" type="video/mp4">
+    </video>
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}À Propos{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid vh-100 overflow-hidden">
+    <div class="row h-100">
+        <!-- Image column -->
+        <div class="col-md-6 h-100 p-0 overflow-hidden">
+            <img
+                src="{% static 'public/img/reading.png' %}"
+                class="w-100 h-100 object-fit-cover"
+                alt="Person reading a book"
+            >
+        </div>
+
+        <!-- Text column -->
+        <div class="col-md-6 d-flex pt-5 justify-content-center p-5">
+            <div>
+                <h1 class="display-text display-1">Bienvenue à Livres aux trésors!</h1>
+                <hr>
+                <p class="display-text display-6">
+                    Nous ne vendons pas seulement des livres. Nous vendons une expérience!
+                    
+                    Foundé dans le carolina du nord, Livres aux trésors vends le hors-série "blind bags" des livres.
+                    Notre blind bags contiennent des jouets et des figurines de votre personnages préfèrés. Mais
+                    vous ne savez pas laquelle vous obtiendres jusq'ua vous ouvrez le sac!   
+                    
+                    Achetez un livre avec un "blind bag" surprise et voir qoui trésor vouz trouverez. 
+                    Essayez votre chance et voyez qoui vous gagnerez.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

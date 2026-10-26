@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Include other URLconf
-    path("", include("apps.main.urls")),
+    path("", include("apps.public.urls")),
 ]
